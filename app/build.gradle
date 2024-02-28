@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 33
+    buildToolsVersion "33.0.2"
 
     defaultConfig {
         applicationId "com.example.e_votingapp"
-        minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 3
+        versionName "3.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -49,4 +49,12 @@ dependencies {
     implementation 'com.github.joielechong:countrycodepicker:2.4.2'
 
     implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+
+
+
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+
 }
